@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <h2>{{ student_name }}</h2>
+  <p class="meta">{{ course }}</p>
+  <p>{{ overview }}</p>
+  <div class="progress-wrap">
+    <div class="progress-bar" style="width: {{ progress.percentage }}%"></div>
+  </div>
+  <p><strong>{{ progress.label }}</strong></p>
+</div>
+{% endblock %}

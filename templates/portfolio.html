@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Unlocked Portfolio Features</h2>
+<div class="card-grid">
+  {% for feature in unlocked_features %}
+  <article class="card">
+    <h3>{{ feature.feature_name }}</h3>
+    <p class="meta">Week {{ feature.week }} · {{ feature.skill }}</p>
+    <ul>{% for item in feature.evidence %}<li>{{ item }}</li>{% endfor %}</ul>
+  </article>
+  {% else %}
+  <article class="card"><p>No features unlocked yet. Complete weekly Python tasks to unlock your showcase.</p></article>
+  {% endfor %}
+</div>
+{% endblock %}
