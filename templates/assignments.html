@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Assignments</h2>
+<div class="progress-wrap"><div class="progress-bar" style="width: {{ progress.percentage }}%"></div></div>
+<p><strong>{{ progress.label }}</strong></p>
+<div class="card-grid">
+  {% for assignment in assignments %}
+  <article class="card">
+    <h3>Week {{ assignment.week }}: {{ assignment.title }}</h3>
+    <p>{{ assignment.feature_name }}</p>
+    {% if assignment.tests_passed %}<span class="badge">Unlocked</span>{% else %}<span class="badge locked">Locked</span>{% endif %}
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}

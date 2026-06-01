@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Reports</h2>
+<div class="card">
+  <h3>Latest Report</h3>
+  <p class="meta">Generated at: {{ latest_report.generated_at }}</p>
+  <p>Completion: {{ latest_report.completion_percentage }}%</p>
+  <p>Unlocked features: {{ latest_report.unlocked_feature_count }}</p>
+</div>
+<div class="card-grid">
+  {% for report in reports %}
+  <article class="card">
+    <p class="meta">{{ report.generated_at }}</p>
+    <p>{{ report.completion_percentage }}% complete</p>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}

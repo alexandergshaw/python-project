@@ -1,0 +1,70 @@
+{
+  "student_name": "Student Name",
+  "course": "Python Developer Portfolio",
+  "weeks": {
+    "week01": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week02": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week03": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week04": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week05": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week06": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week07": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week08": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week09": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week10": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week11": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week12": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week13": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week14": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week15": {
+      "completed": false,
+      "tests_passed": false
+    },
+    "week16": {
+      "completed": false,
+      "tests_passed": false
+    }
+  }
+}

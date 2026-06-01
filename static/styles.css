@@ -1,0 +1,22 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #1b263b;
+  --muted: #5c677d;
+  --accent: #4f46e5;
+  --success: #0f766e;
+  --locked: #9ca3af;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: var(--bg); color: var(--text); }
+header, main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+nav a { margin-right: 1rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 1rem; }
+.card { background: var(--card); border-radius: 12px; padding: 1rem; box-shadow: 0 6px 20px rgba(15,23,42,0.08); }
+.badge { display: inline-block; background: #e0e7ff; color: #3730a3; padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.85rem; }
+.badge.locked { background: #e5e7eb; color: #4b5563; }
+.progress-wrap { background: #dbe2ef; border-radius: 999px; overflow: hidden; height: 16px; }
+.progress-bar { background: linear-gradient(90deg, var(--accent), #7c3aed); height: 100%; }
+.meta { color: var(--muted); }
+ul { padding-left: 1.25rem; }
